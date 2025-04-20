@@ -37,9 +37,13 @@
 <body data-bs-spy="scroll" data-bs-target="#header-nav" tabindex="0">
 
 
-    <nav class="navbar navbar-expand-lg bg-white navbar-light container-fluid py-3 position-fixed ">
+    <nav class="navbar navbar-expand-lg bg-white navbar-light container-fluid py-2 position-fixed ">
         <div class="container">
-            <a class="navbar-brand" href="index.html"><img src="images/main-logo.png" alt="logo"></a>
+            <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+                <img src="images/main_logo.webp" alt="logo" class="main-logo">
+                <img src="images/logo.jpg" alt="second logo" class="main-logo">
+              </a>
+                            
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
                 aria-controls="offcanvasNavbar">
                 <span class="navbar-toggler-icon"></span>
@@ -52,62 +56,23 @@
                         aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
-                    <ul class="navbar-nav align-items-center justify-content-end flex-grow-1 pe-3">
-                        <li class="nav-item">
-                            <a class="nav-link text-uppercase  active px-3" aria-current="page"
-                                href="index.html">home</a>
+                    <ul class="navbar-nav nav-spacing align-items-center justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item mx-2">
+                          <a class="nav-link text-uppercase active" href="index.html">home</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-uppercase  px-3" href="#services">Services</a>
+                        <li class="nav-item mx-2">
+                          <a class="nav-link text-uppercase" href="#services">Services</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-uppercase  px-3" href="#about">about</a>
+                        <li class="nav-item mx-2">
+                          <a class="nav-link text-uppercase" href="#about">about</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-uppercase  px-3" href="#projects">projects</a>
+                        <li class="nav-item mx-2">
+                          <a class="nav-link text-uppercase" href="#projects">projects</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-uppercase  px-3" href="#blog">blog</a>
+                        <li class="nav-item mx-2">
+                          <a class="nav-link text-uppercase" href="#cta">Contact</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-uppercase  px-3" href="#cta">Contact</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link text-uppercase  dropdown-toggle text-center" data-bs-toggle="dropdown" href="#"
-                                role="button" aria-expanded="false">Pages</a>
-                            <ul class="dropdown-menu">
-                                <li><a href="about.html" class="dropdown-item text-uppercase ">About <span
-                                            class="badge bg-secondary">Pro</span></a></li>
-                                <li><a href="blog.html" class="dropdown-item text-uppercase ">Blog <span
-                                            class="badge bg-secondary">Pro</span></a></li>
-                                <li><a href="blog-single.html" class="dropdown-item text-uppercase ">Blog-Single <span
-                                            class="badge bg-secondary">Pro</span></a></li>
-                                <li><a href="booking.html" class="dropdown-item text-uppercase ">Booking <span
-                                            class="badge bg-secondary">Pro</span></a></li>
-                                <li><a href="services.html" class="dropdown-item text-uppercase ">Services <span
-                                            class="badge bg-secondary">Pro</span></a></li>
-                                <li><a href="services-single.html" class="dropdown-item text-uppercase ">Service-Single
-                                        <span class="badge bg-secondary">Pro</span></a></li>
-                                <li><a href="project.html" class="dropdown-item text-uppercase ">Project <span
-                                            class="badge bg-secondary">Pro</span></a></li>
-                                <li><a href="project-single.html" class="dropdown-item text-uppercase ">Project-Single
-                                        <span class="badge bg-secondary">Pro</span></a></li>
-                                <li><a href="pricing.html" class="dropdown-item text-uppercase ">Pricing <span
-                                            class="badge bg-secondary">Pro</span></a></li>
-                                <li><a href="contact.html" class="dropdown-item text-uppercase ">Contact <span
-                                            class="badge bg-secondary">Pro</span></a></li>
-                                <li><a href="team.html" class="dropdown-item text-uppercase ">Our Team <span
-                                            class="badge bg-secondary">Pro</span></a></li>
-                                <li><a href="review.html" class="dropdown-item text-uppercase ">Reviews <span
-                                            class="badge bg-secondary">Pro</span></a></li>
-                                <li><a href="faq.html" class="dropdown-item text-uppercase ">FAQs <span
-                                            class="badge bg-secondary">Pro</span></a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item ms-2"><a href="https://templatesjungle.gumroad.com/l/roofers-roofing-bootstrap-html-website-template" class="dropdown-item text-uppercase btn btn-primary text-white py-2 px-3 ">Get Pro </a></li>
-
-                    </ul>
-
+                      </ul>                      
                     <div class="d-flex mt-5 mt-lg-0 ps-lg-3 align-items-center justify-content-center ">
                         <ul class="navbar-nav justify-content-end align-items-center">
                             <li class="nav-item">
@@ -136,61 +101,47 @@
         <div class="container py-5 mt-5">
             <div class="row align-items-center py-5 mt-5">
                 <div class="col-md-6 mb-5 mb-md-0">
-                    <h6 class="text-white">QUALITY ROOFING SOLUTIONS</h6>
+                    <h5 class="text-white">AMERICAN ROOFING SOLUTIONS</h5>
                     <h2 class="text-white fw-bold display-2">Expert roofers at your command</h2>
-                    <p class="text-white">Sagittis pulvinar ut dis venenatis nunc nunc vitae aliquam vestibulum. Elit
-                        adipiscing massa diam in dignissim. Risus tellus libero elementum aliquam etiam. Lectus
-                        adipiscing est auctor mi quisque nunc non viverra est.</p>
-                    <ul class="list-unstyled">
-                        <li class="text-white fw-bold">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23"
-                                fill="none">
-                                <g clip-path="url(#clip0_1_359)">
-                                    <path
-                                        d="M11.5 0.359375C5.34719 0.359375 0.359375 5.34719 0.359375 11.5C0.359375 17.6528 5.34719 22.6406 11.5 22.6406C17.6528 22.6406 22.6406 17.6528 22.6406 11.5C22.6406 5.34719 17.6528 0.359375 11.5 0.359375ZM11.5 2.51562C16.4653 2.51562 20.4844 6.53393 20.4844 11.5C20.4844 16.4653 16.4661 20.4844 11.5 20.4844C6.5347 20.4844 2.51562 16.4661 2.51562 11.5C2.51562 6.5347 6.53393 2.51562 11.5 2.51562ZM17.7982 8.36746L16.7859 7.34693C16.5762 7.13557 16.2349 7.13418 16.0235 7.34387L9.67375 13.6426L6.98778 10.9349C6.77813 10.7235 6.43681 10.7221 6.22545 10.9318L5.20487 11.9441C4.99352 12.1538 4.99212 12.4951 5.20182 12.7065L9.27987 16.8176C9.48952 17.0289 9.83084 17.0303 10.0422 16.8206L17.7952 9.12983C18.0065 8.92014 18.0079 8.57882 17.7982 8.36746Z"
-                                        fill="white" />
-                                </g>
-                                <defs>
-                                    <clipPath id="clip0_1_359">
-                                        <rect width="23" height="23" fill="white" />
-                                    </clipPath>
-                                </defs>
-                            </svg>
-                            Fully legal licensed and insured
-                        </li>
-                        <li class="text-white fw-bold">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23"
-                                fill="none">
-                                <g clip-path="url(#clip0_1_359)">
-                                    <path
-                                        d="M11.5 0.359375C5.34719 0.359375 0.359375 5.34719 0.359375 11.5C0.359375 17.6528 5.34719 22.6406 11.5 22.6406C17.6528 22.6406 22.6406 17.6528 22.6406 11.5C22.6406 5.34719 17.6528 0.359375 11.5 0.359375ZM11.5 2.51562C16.4653 2.51562 20.4844 6.53393 20.4844 11.5C20.4844 16.4653 16.4661 20.4844 11.5 20.4844C6.5347 20.4844 2.51562 16.4661 2.51562 11.5C2.51562 6.5347 6.53393 2.51562 11.5 2.51562ZM17.7982 8.36746L16.7859 7.34693C16.5762 7.13557 16.2349 7.13418 16.0235 7.34387L9.67375 13.6426L6.98778 10.9349C6.77813 10.7235 6.43681 10.7221 6.22545 10.9318L5.20487 11.9441C4.99352 12.1538 4.99212 12.4951 5.20182 12.7065L9.27987 16.8176C9.48952 17.0289 9.83084 17.0303 10.0422 16.8206L17.7952 9.12983C18.0065 8.92014 18.0079 8.57882 17.7982 8.36746Z"
-                                        fill="white" />
-                                </g>
-                                <defs>
-                                    <clipPath id="clip0_1_359">
-                                        <rect width="23" height="23" fill="white" />
-                                    </clipPath>
-                                </defs>
-                            </svg>
-                            100% trustworthy company
-                        </li>
-                        <li class="text-white fw-bold">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23"
-                                fill="none">
-                                <g clip-path="url(#clip0_1_359)">
-                                    <path
-                                        d="M11.5 0.359375C5.34719 0.359375 0.359375 5.34719 0.359375 11.5C0.359375 17.6528 5.34719 22.6406 11.5 22.6406C17.6528 22.6406 22.6406 17.6528 22.6406 11.5C22.6406 5.34719 17.6528 0.359375 11.5 0.359375ZM11.5 2.51562C16.4653 2.51562 20.4844 6.53393 20.4844 11.5C20.4844 16.4653 16.4661 20.4844 11.5 20.4844C6.5347 20.4844 2.51562 16.4661 2.51562 11.5C2.51562 6.5347 6.53393 2.51562 11.5 2.51562ZM17.7982 8.36746L16.7859 7.34693C16.5762 7.13557 16.2349 7.13418 16.0235 7.34387L9.67375 13.6426L6.98778 10.9349C6.77813 10.7235 6.43681 10.7221 6.22545 10.9318L5.20487 11.9441C4.99352 12.1538 4.99212 12.4951 5.20182 12.7065L9.27987 16.8176C9.48952 17.0289 9.83084 17.0303 10.0422 16.8206L17.7952 9.12983C18.0065 8.92014 18.0079 8.57882 17.7982 8.36746Z"
-                                        fill="white" />
-                                </g>
-                                <defs>
-                                    <clipPath id="clip0_1_359">
-                                        <rect width="23" height="23" fill="white" />
-                                    </clipPath>
-                                </defs>
-                            </svg>
-                            Most Genuine and transparent
-                        </li>
-                    </ul>
+                    <p class="text-white">At american roofing solutions, we know how devastating storm damage can be — from missing shingles to water intrusion and structural wear. That’s why we offer more than just repairs — we provide full-service restoration tailored to your home’s unique needs.</p>
+
+                    <p class="text-white">Our experienced team specializes in roofing, siding, and gutter systems, ensuring every part of your exterior is protected and built to last. From the initial inspection to the final installation, we use premium materials and expert craftsmanship to restore not just your property, but your sense of security.
+                </p>
+                      <p class="text-white"> Let us handle the hard work while you focus on what matters most — your family and peace of mind. With Better View Restoration, your home is in skilled, reliable hands.   
+                        </p>
+                        <section class="custom-padding bg-light">
+                            <div class="container text-center">
+                              <h2 class="fw-bold mb-4">Why Homeowners Trust Us</h2>
+                              <div class="row justify-content-center">
+                          
+                                <div class="col-md-4 mb-4">
+                                  <div class="p-4 shadow-sm bg-white h-100 rounded">
+                                    <div class="fs-2 mb-3">🛡️</div>
+                                    <h5 class="fw-bold">Fully Licensed, Insured & Certified</h5>
+                                    <p class="text-muted">We operate with all required Maryland state licenses and comprehensive insurance coverage. That means you're fully protected — no risks, no shortcuts, just professional-grade work.</p>
+                                  </div>
+                                </div>
+                          
+                                <div class="col-md-4 mb-4">
+                                  <div class="p-4 shadow-sm bg-white h-100 rounded">
+                                    <div class="fs-2 mb-3">🤝</div>
+                                    <h5 class="fw-bold">A Reputation Built on Trust</h5>
+                                    <p class="text-muted">Our customers choose us because we stand by our word. From the first inspection to the final cleanup, we’re committed to clear communication, dependable scheduling, and honest pricing.</p>
+                                  </div>
+                                </div>
+                          
+                                <div class="col-md-4 mb-4">
+                                  <div class="p-4 shadow-sm bg-white h-100 rounded">
+                                    <div class="fs-2 mb-3">🔍</div>
+                                    <h5 class="fw-bold">Genuine, Transparent Service</h5>
+                                    <p class="text-muted">We don’t upsell. We educate. Our team walks you through the entire process, provides honest assessments, and ensures there are no surprises on your invoice. What you see is what you get — every time.</p>
+                                  </div>
+                                </div>
+                          
+                              </div>
+                            </div>
+                          </section>
+                          
                 </div>
                 <div class=" col-md-5 offset-md-1">
                     <form class="hero-form p-5">
@@ -391,7 +342,7 @@
                         <h5 class="services-heading mb-3">Roof replacement</h5>
                         <p>Sagittis pulvinar ut dis venenatis nunc vitae aliquam vestibulum. Elit adipiscing massa diam.
                         </p>
-                        <a href="services-single.html" class="btn btn-primary service-btn mt-3">read more</a>
+                        <a href="pages/roof_replacement.html" class="btn btn-primary service-btn mt-3">read more</a>
 
                     </div>
                 </div>
@@ -401,7 +352,7 @@
                         <h5 class="services-heading mb-3">damage Repair</h5>
                         <p>Vitae aliquam diam vestibulum. Elit adipiscing massa diam in dignissim risus tellus libero.
                         </p>
-                        <a href="services-single.html" class="btn btn-primary service-btn mt-3">read more</a>
+                        <a href="pages/roof_replacement.html" class="btn btn-primary service-btn mt-3">read more</a>
 
                     </div>
                 </div>
@@ -410,7 +361,7 @@
                         <iconify-icon class="services-icon my-2" icon="mdi:hammer"></iconify-icon>
                         <h5 class="services-heading mb-3">Roof repair </h5>
                         <p>Pulvinar ut dis venenatis nunc vitae aliquam vestibulum. Elit adipiscing massa diamo.</p>
-                        <a href="services-single.html" class="btn btn-primary service-btn mt-3">read more</a>
+                        <a href="pages/roof-repair.html" class="btn btn-primary service-btn mt-3">read more</a>
 
                     </div>
                 </div>
@@ -420,7 +371,7 @@
                         <h5 class="services-heading mb-3">Roof Solar system</h5>
                         <p>Nunc vitae aliquam vestibulum. Elit adipiscing massa diam in dignissim risus tellus libero.
                         </p>
-                        <a href="services-single.html" class="btn btn-primary service-btn mt-3">read more</a>
+                        <a href="pages/roof_sol_sys.html" class="btn btn-primary service-btn mt-3">read more</a>
 
                     </div>
                 </div>
@@ -445,7 +396,6 @@
                         tellus libero elementum aliquam etiam. Lectus adipiscing est auctor mi quisque nunc non viverr.
                     </p>
                     <a href="about.html" class="btn btn-primary service-btn mt-3">About us</a>
-
 
 
                 </div>
@@ -727,7 +677,7 @@
             <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 my-5 py-5 ">
 
                 <div class=" col-md-4 mt-5 mt-md-0 ">
-                    <img src="images/main-logo.png" alt="image" class="my-3">
+                    <img src="images/main_logo.webp" alt="image" class="my-3">
                     <p class="">Elit adipi massa diam in dignissim. Sagittis pulvinar ut dis venenatis nunc nunc vitae
                         aliquam vestibulum.</p>
                     <div class="d-flex align-items-center ">
@@ -798,20 +748,6 @@
 
 
 
-        <footer class="d-flex flex-wrap justify-content-between align-items-center border-top"></footer>
-
-        <div class="container">
-            <footer class="d-flex flex-wrap justify-content-between align-items-center py-2 pt-4">
-                <div class="col-md-6 d-flex align-items-center">
-                    <p>© 2023 Roofers - All rights reserved</p>
-
-                </div>
-                <div class="col-md-6 d-flex align-items-center justify-content-end">
-                    <p class="">© 2023 Website By:<a href="https://templatesjungle.com/" class="website-link"
-                            target="_blank"> <b><u>TemplatesJungle</u></b></a></p>
-                </div>
-
-            </footer>
         </div>
     </section>
 
