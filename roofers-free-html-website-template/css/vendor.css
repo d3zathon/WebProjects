@@ -1,3 +1,17 @@
+.main-logo {
+  height: 70px; /* Adjust this value as needed */
+  width: auto;
+  object-fit: contain;
+}
+.nav-spacing .nav-item {
+  margin: 0 12px; /* Customize the spacing here */
+}
+
+.custom-padding {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
 
 /*------------------------------------*\
     Table of contents
