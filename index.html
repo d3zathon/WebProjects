@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roofers - Roofing Free Bootstrap5 HTML Website Template</title>
+
+    <!--vendor css ================================================== -->
+    <link rel="stylesheet" type="text/css" href="css/vendor.css">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <!--Bootstrap ================================================== -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+
+    <!-- Style Sheet ================================================== -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <!-- Google Fonts ================================================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,700;1,300&family=Roboto:wght@300;400;700&display=swap"
+        rel="stylesheet">
+
+
+    <!-- script ================================================== -->
+    <script src="js/modernizr.js"></script>
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#header-nav" tabindex="0">
+
+
+    <nav class="navbar navbar-expand-lg bg-white navbar-light container-fluid py-2 position-fixed ">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+                <img src="images/main_logo.webp" alt="logo" class="main-logo">
+                <img src="images/logo.jpg" alt="second logo" class="main-logo">
+              </a>
+                            
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav nav-spacing align-items-center justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item mx-2">
+                          <a class="nav-link text-uppercase active" href="index.html">home</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                          <a class="nav-link text-uppercase" href="#services">Services</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                          <a class="nav-link text-uppercase" href="#about">about</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                          <a class="nav-link text-uppercase" href="#projects">projects</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                          <a class="nav-link text-uppercase" href="#cta">Contact</a>
+                        </li>
+                      </ul>                      
+                    <div class="d-flex mt-5 mt-lg-0 ps-lg-3 align-items-center justify-content-center ">
+                        <ul class="navbar-nav justify-content-end align-items-center">
+                            <li class="nav-item">
+                                <a class="nav-link px-3 phone-no" href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <path
+                                            d="M18.3274 22.5001C17.4124 22.5001 16.1271 22.1691 14.2024 21.0938C11.862 19.7813 10.0516 18.5696 7.72383 16.2479C5.47946 14.0049 4.38727 12.5527 2.85868 9.77115C1.1318 6.63052 1.42618 4.98427 1.75524 4.28068C2.14712 3.43974 2.72555 2.93677 3.47321 2.43755C3.89787 2.15932 4.34727 1.92081 4.81571 1.72505C4.86258 1.7049 4.90618 1.68568 4.94508 1.66833C5.17712 1.5638 5.52868 1.40583 5.97399 1.57458C6.27118 1.68615 6.53649 1.91443 6.9518 2.32458C7.80352 3.16458 8.96743 5.03537 9.3968 5.95412C9.68508 6.57333 9.87587 6.98208 9.87633 7.44052C9.87633 7.97724 9.60633 8.39115 9.27868 8.83787C9.21727 8.92177 9.15633 9.00193 9.09727 9.07974C8.74055 9.54849 8.66227 9.68396 8.71383 9.92583C8.81837 10.4119 9.5979 11.859 10.879 13.1372C12.1601 14.4155 13.5654 15.1458 14.0534 15.2499C14.3056 15.3038 14.4438 15.2222 14.9276 14.8529C14.997 14.7999 15.0682 14.7451 15.1427 14.6902C15.6424 14.3185 16.0371 14.0555 16.5612 14.0555H16.564C17.0201 14.0555 17.4106 14.2533 18.0574 14.5796C18.9012 15.0052 20.8282 16.1541 21.6734 17.0068C22.0845 17.4211 22.3137 17.6855 22.4257 17.9822C22.5945 18.429 22.4356 18.7791 22.332 19.0135C22.3146 19.0524 22.2954 19.0951 22.2752 19.1424C22.0779 19.61 21.838 20.0585 21.5585 20.4821C21.0602 21.2274 20.5554 21.8044 19.7126 22.1968C19.2798 22.4015 18.8062 22.5052 18.3274 22.5001Z"
+                                            fill="#313131" />
+                                    </svg>
+                                    (+487) 384 9452
+                                </a>
+                            </li>
+                        </ul>
+                        <a href="https://wa.me/9452652412" target="_blank" class="btn btn-primary ms-md-3">Get in touch</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="hero" class="position-relative overflow-hidden py-4" style="background: url(images/banner-img.png);">
+        <!-- <div class="pattern-overlay pattern-right position-absolute">
+            <img src="images/pattern-hero.png" alt="pattern">
+        </div> -->
+        <div class="container py-5 mt-5">
+            <div class="row align-items-center py-5 mt-5">
+                <div class="col-md-6 mb-5 mb-md-0">
+                    <h5 class="text-white">AMERICAN ROOFING SOLUTIONS</h5>
+                    <h2 class="text-white fw-bold display-2">Expert roofers at your command</h2>
+                    <p class="text-white">At american roofing solutions, we know how devastating storm damage can be — from missing shingles to water intrusion and structural wear. That’s why we offer more than just repairs — we provide full-service restoration tailored to your home’s unique needs.</p>
+
+                    <p class="text-white">Our experienced team specializes in roofing, siding, and gutter systems, ensuring every part of your exterior is protected and built to last. From the initial inspection to the final installation, we use premium materials and expert craftsmanship to restore not just your property, but your sense of security.
+                </p>
+                      <p class="text-white"> Let us handle the hard work while you focus on what matters most — your family and peace of mind. With Better View Restoration, your home is in skilled, reliable hands.   
+                        </p>
+                        <section class="custom-padding bg-light">
+                            <div class="container text-center">
+                              <h2 class="fw-bold mb-4">Why Homeowners Trust Us</h2>
+                              <div class="row justify-content-center">
+                          
+                                <div class="col-md-4 mb-4">
+                                  <div class="p-4 shadow-sm bg-white h-100 rounded">
+                                    <div class="fs-2 mb-3">🛡️</div>
+                                    <h5 class="fw-bold">Fully Licensed, Insured & Certified</h5>
+                                    <p class="text-muted">We operate with all required Maryland state licenses and comprehensive insurance coverage. That means you're fully protected — no risks, no shortcuts, just professional-grade work.</p>
+                                  </div>
+                                </div>
+                          
+                                <div class="col-md-4 mb-4">
+                                  <div class="p-4 shadow-sm bg-white h-100 rounded">
+                                    <div class="fs-2 mb-3">🤝</div>
+                                    <h5 class="fw-bold">A Reputation Built on Trust</h5>
+                                    <p class="text-muted">Our customers choose us because we stand by our word. From the first inspection to the final cleanup, we’re committed to clear communication, dependable scheduling, and honest pricing.</p>
+                                  </div>
+                                </div>
+                          
+                                <div class="col-md-4 mb-4">
+                                  <div class="p-4 shadow-sm bg-white h-100 rounded">
+                                    <div class="fs-2 mb-3">🔍</div>
+                                    <h5 class="fw-bold">Genuine, Transparent Service</h5>
+                                    <p class="text-muted">We don’t upsell. We educate. Our team walks you through the entire process, provides honest assessments, and ensures there are no surprises on your invoice. What you see is what you get — every time.</p>
+                                  </div>
+                                </div>
+                          
+                              </div>
+                            </div>
+                          </section>
+                          
+                </div>
+                <div class=" col-md-5 offset-md-1">
+                    <form class="hero-form p-5">
+                        <h3>Get started</h3>
+
+                        <div class="mb-4">
+                            <label for="exampleInputEmail1" class="form-label mb-0">First Name</label>
+                            <input type="email" class="form-control border-0" id="exampleInputEmail1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail2" class="form-label mb-0">Last Name</label>
+                            <input type="email" class="form-control border-0" id="exampleInputEmail2">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail3" class="form-label mb-0">email</label>
+                            <input type="email" class="form-control border-0" id="exampleInputEmail3">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail4" class="form-label mb-0">phone</label>
+                            <input type="email" class="form-control border-0" id="exampleInputEmail4">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail5" class="form-label mb-0">message</label>
+                            <input type="email" class="form-control border-0" id="exampleInputEmail5">
+                        </div>
+
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary btn-lg">Let’s get started</button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="partners">
+        <div class="container my-5 py-5">
+            <h6 class="fw-bold text-capitalize fs-5 my-5">Our trusted partners</h6>
+            <div class="row">
+                <div class="logo-content d-flex flex-wrap justify-content-between">
+                    <a href="#" class="mb-5 mx-2">
+                        <img src="images/logo1.png" alt="logo" class="logo-image img-fluid">
+                    </a>
+                    <a href="#" class="mb-5 mx-2">
+                        <img src="images/logo2.png" alt="logo" class="logo-image img-fluid">
+                    </a>
+                    <a href="#" class="mb-5 mx-2">
+                        <img src="images/logo3.png" alt="logo" class="logo-image img-fluid">
+                    </a>
+                    <a href="#" class="mb-5 mx-2">
+                        <img src="images/logo4.png" alt="logo" class="logo-image img-fluid">
+                    </a>
+                    <a href="#" class="mb-5 mx-2">
+                        <img src="images/logo5.png" alt="logo" class="logo-image img-fluid">
+                    </a>
+                    <a href="#" class="mb-5 mx-2">
+                        <img src="images/logo6.png" alt="logo" class="logo-image img-fluid">
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonial" class=" position-relative  py-5">
+
+        <div class="testimonial-pattern-overlay pattern-left position-absolute">
+            <img src="images/pattern-testimonial.png" alt="pattern">
+        </div>
+        <div class="testimonial-pattern-overlay pattern-right position-absolute">
+            <img src="images/right-pattern-testimonial.png" alt="pattern">
+        </div>
+
+        <div class="container py-5">
+            <h6 class="text-white">Homeowners reviews</h6>
+            <h2 class="text-white fw-bold display-4 mb-4">Our happy customers</h2>
+
+            <div class="swiper testimonial-swiper mb-4">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide testimonial-content p-5">
+                        <p>“A pellen tesque pretium feugiat vel mobi sagittis lorem habi tasse cursus ipsum quis nec
+                            eget facilisis. Quis nibh ut bindum nisl quis placerat proin tortor mattis.”</p>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img src="images/customer.jpg" alt="image" class="img-fluid">
+                            </div>
+                            <div class="col-md-9">
+                                <h5>Kelly Garcia</h5>
+                                <div class="d-flex">
+                                    <iconify-icon icon="ion:star" class="rate pe-1"></iconify-icon>
+                                    <iconify-icon icon="ion:star" class="rate pe-1"></iconify-icon>
+                                    <iconify-icon icon="ion:star" class="rate pe-1"></iconify-icon>
+                                    <iconify-icon icon="ion:star" class="rate pe-1"></iconify-icon>
+                                    <iconify-icon icon="ion:star" class="rate pe-1"></iconify-icon>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide testimonial-content p-5">
+                        <p>“A pellen tesque pretium feugiat vel mobi sagittis lorem habi tasse cursus ipsum quis nec
+                            eget facilisis. Quis nibh ut bindum nisl quis placerat proin tortor mattis.”</p>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img src="images/customer.jpg" alt="image" class="img-fluid">
+                            </div>
+                            <div class="col-md-9">
+                                <h5>Kelly Garcia</h5>
+                                <div class="d-flex">
+                                    <iconify-icon icon="ion:star" class="rate pe-1"></iconify-icon>
+                                    <iconify-icon icon="ion:star" class="rate pe-1"></iconify-icon>
+                                    <iconify-icon icon="ion:star" class="rate pe-1"></iconify-icon>
+                                    <iconify-icon icon="ion:star" class="rate pe-1"></iconify-icon>
+                                    <iconify-icon icon="ion:star" class="rate pe-1"></iconify-icon>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide testimonial-content p-5">
+                        <p>“A pellen tesque pretium feugiat vel mobi sagittis lorem habi tasse cursus ipsum quis nec
+                            eget facilisis. Quis nibh ut bindum nisl quis placerat proin tortor mattis.”</p>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img src="images/customer.jpg" alt="image" class="img-fluid">
+                            </div>
+                            <div class="col-md-9">
+                                <h5>Kelly Garcia</h5>
+                                <div class="d-flex">
+                                    <iconify-icon icon="ion:star" class="rate pe-1"></iconify-icon>
+                                    <iconify-icon icon="ion:star" class="rate pe-1"></iconify-icon>
+                                    <iconify-icon icon="ion:star" class="rate pe-1"></iconify-icon>
+                                    <iconify-icon icon="ion:star" class="rate pe-1"></iconify-icon>
+                                    <iconify-icon icon="ion:star" class="rate pe-1"></iconify-icon>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide testimonial-content p-5">
+                        <p>“A pellen tesque pretium feugiat vel mobi sagittis lorem habi tasse cursus ipsum quis nec
+                            eget facilisis. Quis nibh ut bindum nisl quis placerat proin tortor mattis.”</p>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img src="images/customer.jpg" alt="image" class="img-fluid">
+                            </div>
+                            <div class="col-md-9">
+                                <h5>Kelly Garcia</h5>
+                                <div class="d-flex">
+                                    <iconify-icon icon="ion:star" class="rate pe-1"></iconify-icon>
+                                    <iconify-icon icon="ion:star" class="rate pe-1"></iconify-icon>
+                                    <iconify-icon icon="ion:star" class="rate pe-1"></iconify-icon>
+                                    <iconify-icon icon="ion:star" class="rate pe-1"></iconify-icon>
+                                    <iconify-icon icon="ion:star" class="rate pe-1"></iconify-icon>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide testimonial-content p-5">
+                        <p>“A pellen tesque pretium feugiat vel mobi sagittis lorem habi tasse cursus ipsum quis nec
+                            eget facilisis. Quis nibh ut bindum nisl quis placerat proin tortor mattis.”</p>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img src="images/customer.jpg" alt="image" class="img-fluid">
+                            </div>
+                            <div class="col-md-9">
+                                <h5>Kelly Garcia</h5>
+                                <div class="d-flex">
+                                    <iconify-icon icon="ion:star" class="rate pe-1"></iconify-icon>
+                                    <iconify-icon icon="ion:star" class="rate pe-1"></iconify-icon>
+                                    <iconify-icon icon="ion:star" class="rate pe-1"></iconify-icon>
+                                    <iconify-icon icon="ion:star" class="rate pe-1"></iconify-icon>
+                                    <iconify-icon icon="ion:star" class="rate pe-1"></iconify-icon>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="swiper-pagination mb-5"></div>
+        </div>
+
+    </section>
+
+    <section id="services" class="my-5 pt-5">
+        <div class="container pt-5">
+            <h6 class="">Our Services</h6>
+            <h2 class=" fw-bold display-4 mb-4">What we provide</h2>
+            <div class="row">
+                <div class=" mt-4 col-md-6 col-lg-3">
+                    <div class="services-components text-center py-5 px-3">
+                        <iconify-icon class="services-icon my-2" icon="mdi:home-roof"></iconify-icon>
+                        <h5 class="services-heading mb-3">Roof replacement</h5>
+                        <p>Sagittis pulvinar ut dis venenatis nunc vitae aliquam vestibulum. Elit adipiscing massa diam.
+                        </p>
+                        <a href="pages/roof_replacement.html" target="_blank" class="btn btn-primary service-btn mt-3">read more</a>
+
+                       
+                    </div>
+                </div>
+                <div class=" mt-4 col-md-6 col-lg-3">
+                    <div class="services-components text-center py-5 px-3">
+                        <iconify-icon class="services-icon my-2" icon="mdi:weather-lightning"></iconify-icon>
+                        <h5 class="services-heading mb-3">damage Repair</h5>
+                        <p>Vitae aliquam diam vestibulum. Elit adipiscing massa diam in dignissim risus tellus libero.
+                        </p>
+                        <a href="pages/dmg-repair.html" target="_blank"  class="btn btn-primary service-btn mt-3">read more</a>
+
+                    </div>
+                </div>
+                <div class=" mt-4 col-md-6 col-lg-3">
+                    <div class="services-components text-center py-5 px-3">
+                        <iconify-icon class="services-icon my-2" icon="mdi:hammer"></iconify-icon>
+                        <h5 class="services-heading mb-3">Roof repair </h5>
+                        <p>Pulvinar ut dis venenatis nunc vitae aliquam vestibulum. Elit adipiscing massa diamo.</p>
+                        <a href="pages/roof-repair.html" target="_blank" class="btn btn-primary service-btn mt-3">read more</a>
+
+                    </div>
+                </div>
+                <div class=" mt-4 col-md-6 col-lg-3">
+                    <div class="services-components text-center py-5 px-3">
+                        <iconify-icon class="services-icon my-2" icon="mdi:white-balance-sunny"></iconify-icon>
+                        <h5 class="services-heading mb-3">Roof Solar system</h5>
+                        <p>Nunc vitae aliquam vestibulum. Elit adipiscing massa diam in dignissim risus tellus libero.
+                        </p>
+                        <a href="pages/roof_sol_sys.html" target="_blank" class="btn btn-primary service-btn mt-3">read more</a>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container py-5">
+            <div class="row align-items-center py-5">
+                <div class=" col-md-6 ps-md-5">
+                    <img src="images/about-img.jpg" alt="image" class="img-fluid">
+                </div>
+                <div class="col-md-6 px-4 py-5">
+                    <h6 class="">Who are we</h6>
+                    <h2 class=" fw-bold display-4 mb-3">Best roofers since 2006</h2>
+                    <p class="">Sagittis pulvinar ut dis venenatis nunc nunc vitae aliquam vestibulum. Elit adipiscing
+                        massa diam in dignissim. Risus tellus libero elementum aliquam etiam. Lectus adipiscing est
+                        auctor mi quisque nunc non viverra est.
+                        Venenatis nunc nunc vitae aliquam vestibulum. Elit adipiscing massa diam in dignissim. Risus
+                        tellus libero elementum aliquam etiam. Lectus adipiscing est auctor mi quisque nunc non viverr.
+                    </p>
+                    <a href="about.html" class="btn btn-primary service-btn mt-3">About us</a>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+
+        <div class="container-fluid my-5 pt-5 p-0 ">
+            <h6 class="text-center text-white mt-5">Our works</h6>
+            <h2 class="text-center text-white fw-bold display-4 mb-5">Our latest projects</h2>
+            <div class="mb-4">
+                <p class="text-center">
+                    <button class="filter-button px-3 me-2 mb-3 active" data-filter="*">All</button>
+                    <button class="filter-button px-3 me-2 mb-3" data-filter=".roof">Roof repairs</button>
+                    <button class="filter-button px-3 me-2 mb-3" data-filter=".install">Installation</button>
+                    <button class="filter-button px-3 me-2 mb-3" data-filter=".solar">Solar</button>
+                    <button class="filter-button px-3 me-2 mb-3" data-filter=".repair">Damage repairs</button>
+                </p>
+            </div>
+
+            <div class="isotope-container">
+                <div class="col-md-2 item roof">
+                    <a href="#"><img src="images/project1.jpg" alt="image" class="img-fluid"></a>
+                    <div class="description text-center px-3 py-5">
+                        <h6 class="project-date my-3 pt-3 fs-6">Feb 3, 2023</h6>
+                        <h3 class="project-heading mb-3">Expert Roofing Installation</h3>
+                        <a href="project-single.html" class="btn btn-primary mt-3">View project</a>
+                    </div>
+                </div>
+                <div class="col-md-2 item solar">
+                    <a href="#"><img src="images/project2.jpg" alt="image" class="img-fluid"></a>
+                    <div class="description text-center px-3 py-5">
+                        <h6 class="project-date my-3 pt-3 fs-6">Feb 3, 2023</h6>
+                        <h3 class="project-heading mb-3">Expert Roofing Installation</h3>
+                        <a href="project-single.html" class="btn btn-primary mt-3">View project</a>
+                    </div>
+                </div>
+                <div class="col-md-2 item repair">
+                    <a href="#"><img src="images/project3.jpg" alt="image" class="img-fluid"></a>
+                    <div class="description text-center px-3 py-5">
+                        <h6 class="project-date my-3 pt-3 fs-6">Feb 3, 2023</h6>
+                        <h3 class="project-heading mb-3">Expert Roofing Installation</h3>
+                        <a href="project-single.html" class="btn btn-primary mt-3">View project</a>
+                    </div>
+                </div>
+                <div class="col-md-2 item roof">
+                    <a href="#"><img src="images/project4.jpg" alt="image" class="img-fluid"></a>
+                    <div class="description text-center px-3 py-5">
+                        <h6 class="project-date my-3 pt-3 fs-6">Feb 3, 2023</h6>
+                        <h3 class="project-heading mb-3">Expert Roofing Installation</h3>
+                        <a href="project-single.html" class="btn btn-primary mt-3">View project</a>
+                    </div>
+                </div>
+                <div class="col-md-2 item install">
+                    <a href="#"><img src="images/project5.jpg" alt="image" class="img-fluid"></a>
+                    <div class="description text-center px-3 py-5">
+                        <h6 class="project-date my-3 pt-3 fs-6">Feb 3, 2023</h6>
+                        <h3 class="project-heading mb-3">Expert Roofing Installation</h3>
+                        <a href="project-single.html" class="btn btn-primary mt-3">View project</a>
+                    </div>
+                </div>
+                <div class="col-md-2 item install">
+                    <a href="#"><img src="images/project1.jpg" alt="image" class="img-fluid"></a>
+                    <div class="description text-center px-3 py-5">
+                        <h6 class="project-date my-3 pt-3 fs-6">Feb 3, 2023</h6>
+                        <h3 class="project-heading mb-3">Expert Roofing Installation</h3>
+                        <a href="project-single.html" class="btn btn-primary mt-3">View project</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <section id="process">
+        <div class="container my-5 py-5">
+            <div class="row process-components my-5">
+                <div class="d-flex flex-wrap justify-content-between">
+
+                    <div class="col text-center px-4 my-5">
+                        <iconify-icon class="process-icon mb-2" icon="mdi:phone-outline"></iconify-icon>
+                        <h5 class="process-heading">call or Fill form</h5>
+                    </div>
+                    <div class="col text-center px-4 my-5">
+                        <iconify-icon class="process-icon mb-2" icon="mdi:forum"></iconify-icon>
+                        <h5 class="process-heading">Talk with us</h5>
+                    </div>
+                    <div class="col text-center px-4 my-5">
+                        <iconify-icon class="process-icon mb-2" icon="mdi:archive-search-outline"></iconify-icon>
+                        <h5 class="process-heading">Inspect & prososal</h5>
+                    </div>
+                    <div class="col text-center px-4 my-5">
+                        <iconify-icon class="process-icon mb-2" icon="mdi:car-lifted-pickup"></iconify-icon>
+                        <h5 class="process-heading">Prep & installation</h5>
+                    </div>
+                    <div class="col text-center px-4 my-5">
+                        <iconify-icon class="process-icon mb-2" icon="mdi:shield-home-outline"></iconify-icon>
+                        <h5 class="process-heading">job site picked up</h5>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq">
+
+        <div class="container my-5 pb-5 ">
+            <h6 class="text-center">Frequently asked questions</h6>
+            <h2 class="text-center fw-bold display-4 mb-5">We’ve got answers</h2>
+
+            <div class="accordion col-md-8 offset-md-2" id="accordionPanelsStayOpenExample">
+
+                <div class="accordion-item mt-3">
+                    <h5 class="accordion-header border-0" id="panelsStayOpen-headingOne">
+                        <button class="accordion-button fs-5" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                            aria-controls="panelsStayOpen-collapseOne">
+                            Will you give us guarantee after roofing ?
+                        </button>
+                    </h5>
+                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                        <div class="accordion-body">
+                            <p>Diam orci gravida convallis at enim risus viverra. Hac mi tristique in aliquet tincidunt
+                                nam lectus nec. Placerat interdum auctor facilisi massa laoreet hendrerit posuere a.
+                                Tristique ultricies consectetu at.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item mt-3">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                        <button class="accordion-button fs-5 collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseTwo">
+                            Is there any color options for my roofing ?
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                        aria-labelledby="panelsStayOpen-headingTwo">
+                        <div class="accordion-body">
+                            <p>Diam orci gravida convallis at enim risus viverra. Hac mi tristique in aliquet tincidunt
+                                nam lectus
+                                nec. Placerat interdum auctor facilisi massa laoreet hendrerit posuere a. Tristique
+                                ultricies consectetu
+                                at.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item mt-3">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                        <button class="accordion-button fs-5 collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseThree">
+                            What is the cost for just repairing ?
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                        aria-labelledby="panelsStayOpen-headingThree">
+                        <div class="accordion-body">
+                            <p>Diam orci gravida convallis at enim risus viverra. Hac mi tristique in aliquet tincidunt
+                                nam lectus
+                                nec. Placerat interdum auctor facilisi massa laoreet hendrerit posuere a. Tristique
+                                ultricies consectetu
+                                at.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item mt-3">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+                        <button class="accordion-button fs-5 collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseFour">
+                            What time will it take to finish my roofing ?
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse"
+                        aria-labelledby="panelsStayOpen-headingFour">
+                        <div class="accordion-body">
+                            <p>Diam orci gravida convallis at enim risus viverra. Hac mi tristique in aliquet tincidunt
+                                nam lectus
+                                nec. Placerat interdum auctor facilisi massa laoreet hendrerit posuere a. Tristique
+                                ultricies consectetu
+                                at.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+
+        </div>
+    </section>
+
+    <section id="blog" class="my-5 ">
+        <div class="container py-5">
+            <div class="row align-items-center ">
+                <div class="col-md-6 col-lg-3">
+                    <div class="mb-3">
+                        <h6 class="">Our Articles</h6>
+                        <h2 class=" fw-bold display-4 mb-3">Latest blogs</h2>
+                        <a href="blog.html" class="btn btn-primary mb-5 mb-md-0">Read Articles</a>
+
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="mb-3">
+                        <a href="#"><img src="images/blog1.jpg" alt="image" class="img-fluid"></a>
+                        <h6 class="my-3">Posted by: Troopers</h6>
+                        <a href="#" class="text-decoration-none">
+                            <h5 class="mb-3">How to take care of your roofr</h5>
+                        </a>
+                        <p>Vitae aliquam diam vestibulum. Elit adipiscing massa diam in dignissim risus tellus libero.
+                        </p>
+                        <a href="blog-single.html" class="btn btn-primary mt-3 mb-5">Read More</a>
+
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="mb-3">
+                        <a href="#"><img src="images/blog2.jpg" alt="image" class="img-fluid"></a>
+                        <h6 class="my-3">Posted by: Troopers</h6>
+                        <a href="#" class="text-decoration-none">
+                            <h5 class="mb-3">Best quality roofing company</h5>
+                        </a>
+                        <p>Vitae aliquam diam vestibulum. Elit adipiscing massa diam in dignissim risus tellus libero.
+                        </p>
+                        <a href="blog-single.html" class="btn btn-primary mt-3 mb-5">Read More</a>
+
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="mb-3">
+                        <a href="#"><img src="images/blog3.jpg" alt="image" class="img-fluid"></a>
+                        <h6 class="my-3">Posted by: Troopers</h6>
+                        <a href="#" class="text-decoration-none">
+                            <h5 class="mb-3">For what years roof is stable</h5>
+                        </a>
+                        <p>Vitae aliquam diam vestibulum. Elit adipiscing massa diam in dignissim risus tellus libero.
+                        </p>
+                        <a href="blog-single.html" class="btn btn-primary mt-3 mb-5">Read More</a>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <section id="cta" class="position-relative my-5">
+        <div class="cta-pattern-overlay pattern-left position-absolute top-50 start-0 translate-middle-y">
+            <img src="images/cta-pattern.png" alt="pattern">
+        </div>
+        <div class="container my-5 py-5">
+            <div class="row align-items-center my-5">
+                <div class="col-md-6 offset-md-2">
+                    <h6 class="text-white">Get started now</h6>
+                    <h2 class="text-white fw-bold display-4">Get your roofing done</h2>
+                </div>
+                <div class="col-md-2">
+                    <a href="contact.html" class="btn btn-primary cta-button ">Get in touch</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="footer">
+        <div class="container footer-container mt-5 pt-3">
+            <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 my-5 py-5 ">
+
+                <div class=" col-md-4 mt-5 mt-md-0 ">
+                    <img src="images/main_logo.webp" alt="logo" class="img-fluid d-block mx-auto" style="max-width: 100%; height: auto;">
+                    <p class="">Elit adipi massa diam in dignissim. Sagittis pulvinar ut dis venenatis nunc nunc vitae
+                        aliquam vestibulum.</p>
+                    <div class="d-flex align-items-center ">
+                        <a href="#" target="_blank"><iconify-icon class="social-link-icon active pe-4"
+                                icon="mdi:facebook"></iconify-icon></a>
+                        <a href="#" target="_blank"><iconify-icon class="social-link-icon pe-4"
+                                icon="mdi:twitter"></iconify-icon></a>
+                        <a href="#" target="_blank"><iconify-icon class="social-link-icon pe-4"
+                                icon="mdi:instagram"></iconify-icon></a>
+                        <a href="#" target="_blank"><iconify-icon class="social-link-icon pe-4"
+                                icon="mdi:linkedin"></iconify-icon></a>
+                        <a href="#" target="_blank"><iconify-icon class="social-link-icon pe-4"
+                                icon="mdi:youtube"></iconify-icon></a>
+                    </div>
+
+                </div>
+
+                <div class="col-md-2 offset-md-1">
+                    <h5 class="py-3">Our services</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-3"><a href="#" class="nav-link fw-normal p-0 "> Roof replacement</a>
+                        </li>
+                        <li class="nav-item mb-3"><a href="#" class="nav-link fw-normal p-0 "> Damage repairs </a>
+                        </li>
+                        <li class="nav-item mb-3"><a href="#" class="nav-link fw-normal p-0 "> Roof repair</a>
+                        </li>
+                        <li class="nav-item mb-3"><a href="#" class="nav-link fw-normal p-0 "> Roof Solar System</a>
+                        </li>
+                        <li class="nav-item mb-3"><a href="#" class="nav-link fw-normal p-0 "> Roof coating</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 ">
+                    <h5 class="py-3">Quick links</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-3"><a href="#" class="nav-link fw-normal p-0 "> Our locations </a>
+                        </li>
+                        <li class="nav-item mb-3"><a href="#" class="nav-link fw-normal p-0 "> About us </a>
+                        </li>
+                        <li class="nav-item mb-3"><a href="#" class="nav-link fw-normal p-0 "> Our gallery </a>
+                        </li>
+                        <li class="nav-item mb-3"><a href="#" class="nav-link fw-normal p-0 "> Privacy Policy</a></li>
+                        <li class="nav-item mb-3"><a href="#" class="nav-link fw-normal p-0 "> Contact us </a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 ">
+                    <h5 class="py-3">Contact Info</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item d-flex mb-3">
+                            <iconify-icon class="contact-icon pe-3" icon="ion:location"></iconify-icon>
+                            <a href="#" class="nav-link p-0 "> 163 Elm Drive, NYC, USA </a>
+                        </li>
+                        <li class="nav-item d-flex mb-3">
+                            <iconify-icon class="contact-icon pe-3" icon="ion:call"></iconify-icon><a href="#"
+                                class="nav-link p-0 "> (+089) 234-516-6123 </a>
+                        </li>
+                        <li class="nav-item d-flex mb-3">
+                            <iconify-icon class="contact-icon pe-3" icon="ion:mail"></iconify-icon><a href="#"
+                                class="nav-link p-0 "> info@yourdomain.com </a>
+                        </li>
+
+                    </ul>
+                </div>
+
+
+
+            </footer>
+        </div>
+
+
+
+        </div>
+    </section>
+
+    <!-- script ================================================== -->
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
+
+
+</body>
+
+</html>
